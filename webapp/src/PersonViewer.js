@@ -9,8 +9,7 @@ export const GET_PERSONS = gql`
   query GetPersons {DemoGraph
         {person (
             order_by : {name : asc})
-            {id,
-            name,
+            {name,
             gender,
             height}
         }
@@ -24,20 +23,15 @@ export default () => (
         <Table>
           <thead>
             <tr>
-                <th>id</th>
               <th>name</th>
               <th>gender</th>
               <th>height</th>
             </tr>
           </thead>
           <tbody>
-              
-              {console.log(loading)}
-              {console.log(error)}
-              {console.log(data)}
             {data.DemoGraph.person.map(person => (
-              <tr key={person.id}>
-                  <td>{person.name}</td>
+              <tr key={person.name}>
+                <td>{person.name}</td>
                 <td>{person.gender}</td>
                 <td>{person.height}</td>
               </tr>
