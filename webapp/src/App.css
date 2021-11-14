@@ -19,6 +19,16 @@ body {
   pointer-events: none;
 }
 
+.anticon-user {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.ant-list-item {
+  padding: 0;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
