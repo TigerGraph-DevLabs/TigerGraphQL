@@ -1,5 +1,15 @@
 @import '~antd/dist/antd.css';
 
+body {
+  background-color: rgb(240, 242, 245);
+  padding-top: 64px;
+}
+
+.content {
+  width: 960px;
+  margin: 0 auto;
+}
+
 .App {
   text-align: center;
 }
