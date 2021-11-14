@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-import PersonViewer from './PersonViewer';
+import PeopleViewer from './PeopleViewer';
+import { Button } from 'antd';
+import './App.css';
 
 class App extends Component {
   render() {
     return (
       <main>
-        <PersonViewer />
+        <PeopleViewer />
+        <Button type="primary">Button</Button>
       </main>
     );
   }
