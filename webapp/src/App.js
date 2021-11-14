@@ -5,7 +5,7 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <main class="content">
+      <main className="content">
         <PeopleViewer />
       </main>
     );

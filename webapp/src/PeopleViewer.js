@@ -3,8 +3,7 @@
 import React from 'react';
 import gql from 'graphql-tag';
 import { Query } from 'react-apollo';
-import { Table } from 'reactstrap';
-import { Card } from 'antd';
+import { Card, Divider } from 'antd';
 
 export const GET_PERSONS = gql`
   query GetPersons {
@@ -28,12 +27,16 @@ const PeopleViewer = () => (
     {({ loading, data, error }) => !loading && (
       <Card title="People On Record" style={{ width: 960 }}>
         {
-          data.DemoGraph.person.map(person => (
+          data.DemoGraph.person.map((person, index) => (
             <div key={person.name}>
               {person.name},
               {person.gender},
               {person.height} cm,
               {new Date().getFullYear() - person.birthYear} years old
+              {
+                index === data.DemoGraph.person.length - 1
+                || <Divider />
+              }
             </div>
           ))
         }
