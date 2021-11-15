@@ -4,6 +4,8 @@ import React from 'react';
 import { Avatar, Button, Image, List } from 'antd';
 import { beautifyDate } from './utility';
 
+import { Link } from "react-router-dom";
+
 const EducationPreview = ({ name, startTime, endTime }) => (
   <List.Item>
     <List.Item.Meta
@@ -23,7 +25,9 @@ const EducationPreview = ({ name, startTime, endTime }) => (
       title={name}
       description={`${beautifyDate(startTime)} - ${beautifyDate(endTime)}`}
     />
-    <Button>View School</Button>
+    <Link to={`/school/${name}`}>
+      <Button>View School</Button>
+    </Link>
   </List.Item>
 );
 

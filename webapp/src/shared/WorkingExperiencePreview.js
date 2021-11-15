@@ -4,6 +4,8 @@ import React from 'react';
 import { Avatar, Button, Image, List } from 'antd';
 import { beautifyDate } from './utility';
 
+import { Link } from "react-router-dom";
+
 const WorkingExperiencePreview = ({ title, name, startTime, endTime }) => (
   <List.Item>
     <List.Item.Meta
@@ -23,7 +25,10 @@ const WorkingExperiencePreview = ({ title, name, startTime, endTime }) => (
       title={`${title} at ${name}`}
       description={`${beautifyDate(startTime)} - ${beautifyDate(endTime)}`}
     />
-    <Button>View Company</Button>
+    <Link to={`/company/${name}`}>
+      <Button>View Company</Button>
+    </Link>
+
   </List.Item>
 );
 

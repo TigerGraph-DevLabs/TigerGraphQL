@@ -4,7 +4,7 @@ import React from 'react';
 import gql from 'graphql-tag';
 import { Query } from 'react-apollo';
 import { Avatar, Card, Col, Divider, Image, Rate, Row, Space, Typography } from 'antd';
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 import EducationPreview from './shared/EducationPreview';
 import PersonPreview from './shared/PersonPreview';
@@ -16,7 +16,7 @@ const { Title } = Typography;
 const PersonDetail = () => {
   const params = useParams();
   const GET_PERSON_DETAIL = gql`
-    query GetPersons {
+    query GetPersonDetail {
       DemoGraph {
         person (
           where: {
@@ -135,7 +135,10 @@ const PersonDetail = () => {
                     />
                   </Col>
                   <Col span={20}>
-                    Hometown: {data.DemoGraph.person[0].born_in[0].to.name}
+                    Hometown:&nbsp;
+                    <Link to={`/city/${data.DemoGraph.person[0].born_in[0].to.name}`}>
+                      {data.DemoGraph.person[0].born_in[0].to.name}
+                    </Link>
                   </Col>
                 </Row>
                 <Row align="middle">
