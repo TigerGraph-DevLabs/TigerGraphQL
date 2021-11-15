@@ -6,7 +6,5 @@ export default new ApolloClient({
   headers: {
     "Content-Type": "application/graphql",
   },
-  cache: new InMemoryCache({
-    addTypename: false
-  }),
+  cache: new InMemoryCache(),
 });
