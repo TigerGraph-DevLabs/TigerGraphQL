@@ -25,6 +25,7 @@ const PersonDetail = () => {
             }
           }
         ) {
+          id
           name
           gender
           birthYear
@@ -33,6 +34,7 @@ const PersonDetail = () => {
           born_in {
             birthday
             to {
+              id
               name
             }
           }
@@ -46,6 +48,7 @@ const PersonDetail = () => {
             start_time
             end_time
             to {
+              id
               name
             }
           }
@@ -54,11 +57,13 @@ const PersonDetail = () => {
             start_time
             end_time
             to {
+              id
               name
             }
           }
           is_friend_of {
             to {
+              id
               name
               gender
               birthYear
@@ -136,7 +141,7 @@ const PersonDetail = () => {
                   </Col>
                   <Col span={20}>
                     Hometown:&nbsp;
-                    <Link to={`/city/${data.DemoGraph.person[0].born_in[0].to.name}`}>
+                    <Link to={`/city/${data.DemoGraph.person[0].born_in[0].to.id}`}>
                       {data.DemoGraph.person[0].born_in[0].to.name}
                     </Link>
                   </Col>
@@ -179,8 +184,9 @@ const PersonDetail = () => {
               <Card title="Education">
                 {
                   data.DemoGraph.person[0].attend.map((school, index) => (
-                    <div key={school.to.name}>
+                    <div key={school.to.id}>
                       <EducationPreview
+                        id={school.to.id}
                         name={school.to.name}
                         startTime={school.start_time}
                         endTime={school.end_time}
@@ -196,9 +202,10 @@ const PersonDetail = () => {
               <Card title="Working Experience">
                 {
                   data.DemoGraph.person[0].work_at.map((company, index) => (
-                    <div key={company.to.name}>
+                    <div key={company.to.id}>
                       <WorkingExperiencePreview
                         title={company.title}
+                        id={company.to.id}
                         name={company.to.name}
                         startTime={company.start_time}
                         endTime={company.end_time}
@@ -214,8 +221,9 @@ const PersonDetail = () => {
               <Card title="Friends">
                 {
                   data.DemoGraph.person[0].is_friend_of.map((person, index) => (
-                    <div key={person.to.name}>
+                    <div key={person.to.id}>
                       <PersonPreview
+                        id={person.to.id}
                         name={person.to.name}
                         gender={person.to.gender}
                         height={person.to.height}

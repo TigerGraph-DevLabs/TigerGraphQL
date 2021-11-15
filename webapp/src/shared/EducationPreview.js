@@ -6,7 +6,7 @@ import { beautifyDate } from './utility';
 
 import { Link } from "react-router-dom";
 
-const EducationPreview = ({ name, startTime, endTime }) => (
+const EducationPreview = ({ id, name, startTime, endTime }) => (
   <List.Item>
     <List.Item.Meta
       avatar={
@@ -25,7 +25,7 @@ const EducationPreview = ({ name, startTime, endTime }) => (
       title={name}
       description={`${beautifyDate(startTime)} - ${beautifyDate(endTime)}`}
     />
-    <Link to={`/school/${name}`}>
+    <Link to={`/school/${id}`}>
       <Button>View School</Button>
     </Link>
   </List.Item>

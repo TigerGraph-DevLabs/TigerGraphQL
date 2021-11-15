@@ -5,7 +5,7 @@ import { Avatar, Button, Image, List } from 'antd';
 
 import { Link } from "react-router-dom";
 
-const PersonPreview = ({ name, gender, height, age }) => (
+const PersonPreview = ({ id, name, gender, height, age }) => (
   <List.Item>
     <List.Item.Meta
       avatar={
@@ -24,7 +24,7 @@ const PersonPreview = ({ name, gender, height, age }) => (
       title={name}
       description={`${gender}, ${height}cm, ${age} years old`}
     />
-    <Link to={`/person/${name}`}>
+    <Link to={`/person/${id}`}>
       <Button>View Person</Button>
     </Link>
   </List.Item>
