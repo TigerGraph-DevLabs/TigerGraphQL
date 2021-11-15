@@ -4,6 +4,7 @@ import React from 'react';
 import gql from 'graphql-tag';
 import { Query } from 'react-apollo';
 import { Avatar, Card, Col, Divider, Image, Rate, Row, Space, Typography } from 'antd';
+import { useParams } from "react-router-dom";
 
 import EducationPreview from './shared/EducationPreview';
 import PersonPreview from './shared/PersonPreview';
@@ -12,14 +13,15 @@ import { beautifyDate } from './shared/utility';
 
 const { Title } = Typography;
 
-const PersonDetail = ({ name }) => {
+const PersonDetail = () => {
+  const params = useParams();
   const GET_PERSON_DETAIL = gql`
     query GetPersons {
       DemoGraph {
         person (
           where: {
             name: {
-              _eq: "${name}"
+              _eq: "${params.personID}"
             }
           }
         ) {

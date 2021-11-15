@@ -31,7 +31,6 @@ const PeopleViewer = () => (
         {
           data.DemoGraph.person.map((person, index) => (
             <div key={person.name}>
-              {new Date().getFullYear() - person.birthYear} years old
               <PersonPreview 
                 name={person.name}
                 gender={person.gender}

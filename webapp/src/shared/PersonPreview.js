@@ -3,6 +3,8 @@
 import React from 'react';
 import { Avatar, Button, Image, List } from 'antd';
 
+import { Link } from "react-router-dom";
+
 const PersonPreview = ({ name, gender, height, age }) => (
   <List.Item>
     <List.Item.Meta
@@ -22,7 +24,9 @@ const PersonPreview = ({ name, gender, height, age }) => (
       title={name}
       description={`${gender}, ${height}cm, ${age} years old`}
     />
-    <Button>View Person</Button>
+    <Link to={`/person/${name}`}>
+      <Button>View Person</Button>
+    </Link>
   </List.Item>
 );
 
