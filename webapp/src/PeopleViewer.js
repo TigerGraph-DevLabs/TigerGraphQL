@@ -15,6 +15,7 @@ export const GET_PERSONS = gql`
           name : asc
         }
       ) {
+        id
         name
         gender
         birthYear
@@ -31,7 +32,8 @@ const PeopleViewer = () => (
         {
           data.DemoGraph.person.map((person, index) => (
             <div key={person.name}>
-              <PersonPreview 
+              <PersonPreview
+                id={person.id}
                 name={person.name}
                 gender={person.gender}
                 height={person.height}
