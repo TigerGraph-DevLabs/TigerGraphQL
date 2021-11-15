@@ -3,7 +3,7 @@
 import React from 'react';
 import { Avatar, Button, Image, List } from 'antd';
 
-const PersonPreview = ({ name, gender, height, age }) => (
+const EducationPreview = ({ name, startTime, endTime }) => (
   <List.Item>
     <List.Item.Meta
       avatar={
@@ -12,7 +12,7 @@ const PersonPreview = ({ name, gender, height, age }) => (
           size={48}
           src={
             <Image
-              src={`${process.env.PUBLIC_URL}/avatar_${gender}.png`}
+              src={`${process.env.PUBLIC_URL}/school.png`}
               style={{ width: 48, backgroundColor: "#ccc" }}
               preview={false}
             />
@@ -20,10 +20,10 @@ const PersonPreview = ({ name, gender, height, age }) => (
         />
       }
       title={name}
-      description={`${gender}, ${height}cm, ${age} years old`}
+      description={`${startTime} - ${endTime}`}
     />
-    <Button>View Person</Button>
+    <Button>View School</Button>
   </List.Item>
 );
 
-export default PersonPreview;
+export default EducationPreview;
