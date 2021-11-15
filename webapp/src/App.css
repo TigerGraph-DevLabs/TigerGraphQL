@@ -1,3 +1,15 @@
+@import '~antd/dist/antd.css';
+
+body {
+  background-color: rgb(240, 242, 245);
+  padding-top: 64px;
+}
+
+.content {
+  width: 960px;
+  margin: 0 auto;
+}
+
 .App {
   text-align: center;
 }
@@ -5,6 +17,16 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.anticon-user {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.ant-list-item {
+  padding: 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {
