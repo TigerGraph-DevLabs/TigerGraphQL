@@ -8,6 +8,7 @@ import { Avatar, Card, Col, Divider, Image, Rate, Row, Space, Typography } from 
 import EducationPreview from './shared/EducationPreview';
 import PersonPreview from './shared/PersonPreview';
 import WorkingExperiencePreview from './shared/WorkingExperiencePreview';
+import { beautifyDate } from './shared/utility';
 
 const { Title } = Typography;
 
@@ -120,7 +121,7 @@ const PersonDetail = ({ name }) => {
                     />
                   </Col>
                   <Col span={20}>
-                    Birthday: {data.DemoGraph.person[0].born_in[0].birthday}
+                    Birthday: {beautifyDate(data.DemoGraph.person[0].born_in[0].birthday)}
                   </Col>
                 </Row>
                 <Row align="middle">
@@ -151,7 +152,7 @@ const PersonDetail = ({ name }) => {
               <Card title="Skills">
                 {
                   data.DemoGraph.person[0].has.map(skill => (
-                    <Row align="middle">
+                    <Row align="middle" key={skill.to.name}>
                       <Col span={11}>
                         {skill.to.name}
                       </Col>

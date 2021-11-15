@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <main className="content">
-        <PersonDetail name={"Tom"} />
+        <PersonDetail name={"Emily"} />
         {/* <PeopleViewer /> */}
       </main>
     );

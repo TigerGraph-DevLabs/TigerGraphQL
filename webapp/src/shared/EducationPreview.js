@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Avatar, Button, Image, List } from 'antd';
+import { beautifyDate } from './utility';
 
 const EducationPreview = ({ name, startTime, endTime }) => (
   <List.Item>
@@ -20,7 +21,7 @@ const EducationPreview = ({ name, startTime, endTime }) => (
         />
       }
       title={name}
-      description={`${startTime} - ${endTime}`}
+      description={`${beautifyDate(startTime)} - ${beautifyDate(endTime)}`}
     />
     <Button>View School</Button>
   </List.Item>
