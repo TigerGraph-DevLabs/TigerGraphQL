@@ -32,8 +32,6 @@ const SchoolDetail = () => {
             }
           }
           reverse_attend {
-            start_time
-            end_time
             to {
               id
               name
@@ -95,32 +93,32 @@ const SchoolDetail = () => {
           </Space>
         </Col>
         <Col span={16}>
-            <Space
-              direction="vertical"
-              size={16}
-              style={{ width: "calc(100% - 16px)", position: "absolute", top: 0 }}
-            >
-              <Card title="Students">
-                {
-                  data.DemoGraph.school[0].reverse_attend.map((person, index) => (
-                    <div key={person.to.id}>
-                      <PersonPreview
-                        id={person.to.id}
-                        name={person.to.name}
-                        gender={person.to.gender}
-                        height={person.to.height}
-                        age={new Date().getFullYear() - person.to.birthYear}
-                      />
-                      {
-                        index === data.DemoGraph.school[0].reverse_attend.length - 1
-                        || <Divider />
-                      }
-                    </div>
-                  ))
-                }
-              </Card>
-            </Space>
-          </Col>
+          <Space
+            direction="vertical"
+            size={16}
+            style={{ width: "calc(100% - 16px)", position: "absolute", top: 0 }}
+          >
+            <Card title="Students">
+              {
+                data.DemoGraph.school[0].reverse_attend.map((person, index) => (
+                  <div key={person.to.id}>
+                    <PersonPreview
+                      id={person.to.id}
+                      name={person.to.name}
+                      gender={person.to.gender}
+                      height={person.to.height}
+                      age={new Date().getFullYear() - person.to.birthYear}
+                    />
+                    {
+                      index === data.DemoGraph.school[0].reverse_attend.length - 1
+                      || <Divider />
+                    }
+                  </div>
+                ))
+              }
+            </Card>
+          </Space>
+        </Col>
       </Row>
     )}
   </Query>
