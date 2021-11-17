@@ -5,3 +5,10 @@ export function beautifyDate(datetime) {
   const dt = new Date(datetime.split(' ')[0]);
   return `${month[dt.getMonth()]} ${dt.getDate()}, ${dt.getFullYear()}`;
 }
+
+export function beautifyNumber(num) {
+  return `${num}`.replace(
+    /\B(?=(\d{3})+(?!\d))/g,
+    ','
+  );
+}

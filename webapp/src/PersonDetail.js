@@ -20,7 +20,7 @@ const PersonDetail = () => {
       DemoGraph {
         person (
           where: {
-            name: {
+            id: {
               _eq: "${params.personID}"
             }
           }
