@@ -30,7 +30,6 @@ function Root() {
       <ApolloProvider client={apolloClient}>
         <App />
       </ApolloProvider>
-      ,
     </React.Fragment>
   );
 }
