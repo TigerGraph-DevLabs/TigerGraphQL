@@ -9,16 +9,21 @@ import { InMemoryCache } from "apollo-cache-inmemory";
 
 function Root() {
   const [apolloClient, setApolloClient] = useState(null);
-  useEffect(async () => {
-    let config = await (await fetch("/config.json")).json();
-    let apolloClient = new ApolloClient({
-      uri: config["apolloURL"],
-      headers: {
-        "Content-Type": "application/graphql",
-      },
-      cache: new InMemoryCache(),
-    });
-    setApolloClient(apolloClient);
+
+  useEffect(() => {
+    const initApolloClient = async () => {
+      let config = await (await fetch("/config.json")).json();
+      let apolloClient = new ApolloClient({
+        uri: config["apolloURL"],
+        headers: {
+          "Content-Type": "application/graphql",
+        },
+        cache: new InMemoryCache(),
+      });
+      setApolloClient(apolloClient);
+    };
+
+    initApolloClient();
   }, []);
 
   if (!apolloClient) {
