@@ -14,7 +14,7 @@ function Root() {
     const initApolloClient = async () => {
       let config = await (await fetch("/config.json")).json();
       let apolloClient = new ApolloClient({
-        uri: config["apolloURL"],
+        uri: config["GRAPHQL_URL"],
         headers: {
           "Content-Type": "application/graphql",
         },

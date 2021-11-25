@@ -1,3 +1,3 @@
 {
-  "apolloURL": "http://localhost:8080/graphql"
+  "GRAPHQL_URL": "http://localhost:8080/graphql"
 }
