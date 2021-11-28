@@ -145,3 +145,13 @@ Open http://localhost:3000 in browser to explore the web application:
 ![Landing Page](example-react/media/landing-page.png)
 
 ![Person Details](example-react/media/person-detail.png)
+
+The web application serves as a reference for helping the users to quickly onboard TigerGraph GraphQL service. It is open-sourced under example-react folder.
+
+## 3. Documentation
+
+See the full documentation at https://docs.tigergraph.com/graphql.
+
+## 4. License
+
+TigerGraph GraphQL service is an optional feature of the TigerGraph database product. It shares the same license agreement with the TigerGraph database product.
