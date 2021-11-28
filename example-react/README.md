@@ -24,7 +24,7 @@ This is an example web application built with TigerGraph GraphQL + React + Apoll
     yarn build
     ```
 
-- (Optional) Modify config.json to direct to TigerGraph GraphQL service URL
+- (Optional) Modify public/config.json to direct to TigerGraph GraphQL service URL
 
     ```json
     {
