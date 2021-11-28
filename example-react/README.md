@@ -32,7 +32,7 @@ This is an example web application built with TigerGraph GraphQL + React + Apoll
     }
     ```
 
-- Launch the web application locally using:
+- Launch the web application locally
 
     ```bash
     yarn start
