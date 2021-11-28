@@ -40,10 +40,10 @@ This is an example web application built with TigerGraph GraphQL + React + Apoll
 
 ## Screenshots
 
-If the application starts successfully, you will see the following page loaded:
+If the application starts successfully, you will see the page below loaded:
 
 ![Landing Page](media/landing-page.png)
 
-Click View Person button of any record, you will a similar page like the following loaded:
+Click View Person button of any record, you will see a similar page like below loaded:
 
 ![Person Details](media/person-detail.png)
