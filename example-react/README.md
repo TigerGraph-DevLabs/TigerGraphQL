@@ -28,7 +28,7 @@ This is an example web application built with TigerGraph GraphQL + React + Apoll
 
     ```json
     {
-      "GRAPHQL_URL": "http://localhost:8080/graphql"
+      "GRAPHQL_URL": "http://localhost:4000/graphql"
     }
     ```
 
