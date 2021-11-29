@@ -28,7 +28,7 @@ Click Add data file button from the toolbar
 
 ![Click Add Data File](example-react/media/4-upload-files.png)
 
-Upload all the CSV files from the decompressed folder from tigergraph_example_data.tar.gz. 
+Upload all the CSV files from the decompressed folder from tigergraph_example_data.zip. 
 
 ![Click Upload File To Server](example-react/media/5-select-files.png)
 
