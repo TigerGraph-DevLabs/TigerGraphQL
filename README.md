@@ -6,13 +6,32 @@ TigerGraph GraphQL Service enables our users to access graph data in TigerGraph 
 
 ## 2. Quick Start
 
-### Setup TigerGraph
+### Prerequisite
+
+Download the service binary from this table based on your OS:
+
+| OS           | Link          |
+|--------------|---------------|
+| Linux X86_64 | [Download here](https://tigergraph-release-download.s3.us-west-1.amazonaws.com/tigergraphql/tigergraph-graphql-0.7.0-linux-x86_64.tar.gz) |
+| MacOS x64    | [Download here](https://tigergraph-release-download.s3.us-west-1.amazonaws.com/tigergraphql/tigergraph-graphql-0.7.0-macos-x64.tar.gz) |
+| Windows x64  | [Download here](https://tigergraph-release-download.s3.us-west-1.amazonaws.com/tigergraphql/tigergraph-graphql-0.7.0-windows-x64.zip) |
 
 Download the example TigerGraph solution at https://github.com/TigerGraph-DevLabs/TigerGraphQL/raw/0.7/tigergraphql_example_solution.tar.gz. 
 
-Download the example data set at https://github.com/TigerGraph-DevLabs/TigerGraphQL/raw/0.7/tigergraphql_example_data.zip, and unzip it.
+Download the example data set at https://github.com/TigerGraph-DevLabs/TigerGraphQL/raw/0.7/tigergraphql_example_data.zip.
 
-Suppose you already have a running TigerGraph instance either locally or on https://tgcloud.io/. Go to GraphStudio homepage, and import the solution tarball you just downloaded. It takes around 1 minute.
+Download the example web application from https://github.com/TigerGraph-DevLabs/TigerGraphQL/raw/0.7/tigergraphql_example_react.zip.
+
+Watch this video to setup step by step:
+
+[![TigerGraph GraphQL Service Quick Start
+](https://img.youtube.com/vi/myQT9kv7SnU/0.jpg)](https://www.youtube.com/watch?v=myQT9kv7SnU)
+
+Or follow the steps below:
+
+### Setup TigerGraph
+
+Suppose you already have a running TigerGraph instance either locally or on https://tgcloud.io/. Go to GraphStudio homepage, and import the solution tarball tigergraphql_example_solution.tar.gz you just downloaded. It takes around 1 minute.
 
 ![Import Solution](example-react/media/1-import-solution.png)
 
@@ -28,7 +47,7 @@ Click Add data file button from the toolbar
 
 ![Click Add Data File](example-react/media/4-upload-files.png)
 
-Upload all the CSV files from the decompressed folder from tigergraph_example_data.zip. 
+Unzip tigergraphql_example_data.zip, then upload all the CSV files from the decompressed folder. 
 
 ![Click Upload File To Server](example-react/media/5-select-files.png)
 
@@ -52,22 +71,14 @@ Now your graph is ready to use.
 
 ### Start TigerGraph GraphQL Service
 
-Download the service binary from this table based on your OS:
-
-| OS           | Link          |
-|--------------|---------------|
-| Linux X86_64 | [Download here](https://tigergraph-release-download.s3.us-west-1.amazonaws.com/tigergraphql/tigergraph-graphql-0.7.0-linux-x86_64.tar.gz) |
-| MacOS x64    | [Download here](https://tigergraph-release-download.s3.us-west-1.amazonaws.com/tigergraphql/tigergraph-graphql-0.7.0-macos-x64.tar.gz) |
-| Windows x64  | [Download here](https://tigergraph-release-download.s3.us-west-1.amazonaws.com/tigergraphql/tigergraph-graphql-0.7.0-windows-x64.zip) |
-
-For Linux/MacOS, decompress the tarball, and there will be a binary named tigergraphql.
+For Linux/MacOS, decompress the binary tarball, and there will be a binary named tigergraphql.
 Run the following command from the terminal to start the service and connect to the TigerGraph instance:
 
 ```bash
 ./tigergraphql -s http://<url-to-tigergraph:port> -p 4000 -u tigergraph -w tigergraph -g DemoGraph
 ```
 
-For Windows, unzip the file, and there will be a tigergraphql.exe.
+For Windows, unzip the binary zip file, and there will be an executable tigergraphql.exe.
 Run the executable with the following command to start the service and connect to the TigerGraph instance:
 
 ```bash
@@ -118,8 +129,7 @@ query {
 
 ### Run the example web application
 
-Download the example web application from https://github.com/TigerGraph-DevLabs/TigerGraphQL/raw/0.7/tigergraphql_example_react.zip. 
-Unzip the file, and use the command line terminal to go to the folder.
+Unzip tigergraphql_example_react.zip, and use the command line terminal to go to the folder.
 
 ```bash
 cd tigergraphql_example_react
@@ -150,7 +160,7 @@ The web application serves as a reference for helping the users to quickly onboa
 
 ## 3. Documentation
 
-See the full documentation at https://docs.tigergraph.com/graphql.
+See the full documentation at https://docs.tigergraph.com/graphql/0.7.
 
 ## 4. License
 
