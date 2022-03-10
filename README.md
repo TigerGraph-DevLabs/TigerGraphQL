@@ -12,9 +12,9 @@ Download the service binary from this table based on your OS:
 
 | OS           | Link          |
 |--------------|---------------|
-| Linux X86_64 | [Download here](https://tigergraph-release-download.s3.us-west-1.amazonaws.com/tigergraphql/tigergraph-graphql-0.7.1-linux-x86_64.tar.gz) |
-| MacOS x64    | [Download here](https://tigergraph-release-download.s3.us-west-1.amazonaws.com/tigergraphql/tigergraph-graphql-0.7.1-macos-x64.tar.gz) |
-| Windows x64  | [Download here](https://tigergraph-release-download.s3.us-west-1.amazonaws.com/tigergraphql/tigergraph-graphql-0.7.1-windows-x64.zip) |
+| Linux X86_64 | [Download here](https://tigergraph-release-download.s3.us-west-1.amazonaws.com/tigergraphql/tigergraph-graphql-0.8.0-linux-x86_64.tar.gz) |
+| MacOS x64    | [Download here](https://tigergraph-release-download.s3.us-west-1.amazonaws.com/tigergraphql/tigergraph-graphql-0.8.0-macos-x64.tar.gz) |
+| Windows x64  | [Download here](https://tigergraph-release-download.s3.us-west-1.amazonaws.com/tigergraphql/tigergraph-graphql-0.8.0-windows-x64.zip) |
 
 Download the example TigerGraph solution at https://github.com/TigerGraph-DevLabs/TigerGraphQL/raw/0.7/tigergraphql_example_solution.tar.gz. 
 
@@ -160,7 +160,7 @@ The web application serves as a reference for helping the users to quickly onboa
 
 ## 3. Documentation
 
-See the full documentation at https://docs.tigergraph.com/graphql/0.7.
+See the full documentation at https://docs.tigergraph.com/graphql/0.8.
 
 ## 4. License
 
