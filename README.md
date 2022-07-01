@@ -17,11 +17,11 @@ Download the service binary from this table based on your OS:
 | MacOS x64 M1 Chip | [Download here](https://tigergraph-release-download.s3.us-west-1.amazonaws.com/tigergraphql/tigergraph-graphql-0.9.0-macos-m1-x64.tar.gz) |
 | Windows x64       | [Download here](https://tigergraph-release-download.s3.us-west-1.amazonaws.com/tigergraphql/tigergraph-graphql-0.9.0-windows-x64.zip) |
 
-Download the example TigerGraph solution at https://github.com/TigerGraph-DevLabs/TigerGraphQL/raw/0.7/tigergraphql_example_solution.tar.gz. 
+Download the example TigerGraph solution at https://github.com/TigerGraph-DevLabs/TigerGraphQL/raw/0.9/tigergraphql_example_solution.tar.gz. 
 
-Download the example data set at https://github.com/TigerGraph-DevLabs/TigerGraphQL/raw/0.7/tigergraphql_example_data.zip.
+Download the example data set at https://github.com/TigerGraph-DevLabs/TigerGraphQL/raw/0.9/tigergraphql_example_data.zip.
 
-Download the example web application from https://github.com/TigerGraph-DevLabs/TigerGraphQL/raw/0.7/tigergraphql_example_react.zip.
+Download the example web application from https://github.com/TigerGraph-DevLabs/TigerGraphQL/raw/0.9/tigergraphql_example_react.zip.
 
 Watch this video to setup step by step:
 
