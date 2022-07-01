@@ -10,11 +10,12 @@ TigerGraph GraphQL Service enables our users to access graph data in TigerGraph 
 
 Download the service binary from this table based on your OS:
 
-| OS           | Link          |
-|--------------|---------------|
-| Linux X86_64 | [Download here](https://tigergraph-release-download.s3.us-west-1.amazonaws.com/tigergraphql/tigergraph-graphql-0.8.0-linux-x86_64.tar.gz) |
-| MacOS x64    | [Download here](https://tigergraph-release-download.s3.us-west-1.amazonaws.com/tigergraphql/tigergraph-graphql-0.8.0-macos-x64.tar.gz) |
-| Windows x64  | [Download here](https://tigergraph-release-download.s3.us-west-1.amazonaws.com/tigergraphql/tigergraph-graphql-0.8.0-windows-x64.zip) |
+| OS                | Link          |
+|-------------------|---------------|
+| Linux X86_64      | [Download here](https://tigergraph-release-download.s3.us-west-1.amazonaws.com/tigergraphql/tigergraph-graphql-0.9.0-linux-x86_64.tar.gz) |
+| MacOS x64         | [Download here](https://tigergraph-release-download.s3.us-west-1.amazonaws.com/tigergraphql/tigergraph-graphql-0.9.0-macos-x64.tar.gz) |
+| MacOS x64 M1 Chip | [Download here](https://tigergraph-release-download.s3.us-west-1.amazonaws.com/tigergraphql/tigergraph-graphql-0.9.0-macos-m1-x64.tar.gz) |
+| Windows x64       | [Download here](https://tigergraph-release-download.s3.us-west-1.amazonaws.com/tigergraphql/tigergraph-graphql-0.9.0-windows-x64.zip) |
 
 Download the example TigerGraph solution at https://github.com/TigerGraph-DevLabs/TigerGraphQL/raw/0.7/tigergraphql_example_solution.tar.gz. 
 
@@ -92,7 +93,7 @@ If the connection is successful, you will see something like this in the termina
 > ./tigergraphql -s https://xxxxxx -p 4000 -u tigergraph -w tigergraph -g DemoGraph
 
 2021-11-24 00:22:48.756 I | web/web.go:83] Schema is loaded
-2021-11-24 00:22:48.756 I | web/web.go:89] Start to serve at http://0.0.0.0:4000
+2021-11-24 00:22:48.756 I | web/web.go:89] Start to serve at http://localhost:4000
 ```
 
 Here is a detailed explanation of the parameters:
@@ -160,7 +161,7 @@ The web application serves as a reference for helping the users to quickly onboa
 
 ## 3. Documentation
 
-See the full documentation at https://docs.tigergraph.com/graphql/0.8.
+See the full documentation at https://docs.tigergraph.com/graphql/0.9.
 
 ## 4. License
 
