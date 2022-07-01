@@ -2,7 +2,7 @@
 
 ## 1. Introduction
 
-TigerGraph GraphQL Service enables our users to access graph data in TigerGraph using GraphQL queries. Now you will be able to use any GraphQL client or to simply submit GraphQL queries directly to the service in order to quickly access the graph data in TigerGraph. In the near future the service will also support data update operations via GraphQL mutations.
+TigerGraph GraphQL Service enables our users to access and modify graph data in TigerGraph using GraphQL queries and mutations. Now you will be able to use any GraphQL client or to simply submit GraphQL queries and mutations directly to the service in order to quickly access or modify the graph data in TigerGraph.
 
 ## 2. Quick Start
 
